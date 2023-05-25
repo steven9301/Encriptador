@@ -41,11 +41,10 @@ function desencriptar(stringDesencriptado){
   return stringDesencriptado
 }
   
-  // Función para copiar el resultado al portapapeles
-  function copiar() {
-    mensaje.select();
-    mensaje.setSelectionRange(0, 99999);
-    document.execCommand('copy');
-    alert('El resultado se ha copiado al portapapeles.');
-  }
+function copiar() {
+  mensaje.select();
+  mensaje.setSelectionRange(0, 99999);
+  document.execCommand('copy');
+  alert('El resultado se ha copiado al portapapeles.');
+}
   
